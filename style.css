@@ -645,3 +645,32 @@ h4{
     transform: rotate(90deg);
 }
 
+
+    /* Mobile Menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: #444;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    /* Responsive Media Query for smaller devices */
+    @media screen and (max-width: 768px) {
+      ul {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .mobile-menu.active {
+        display: flex;
+      }
+    }

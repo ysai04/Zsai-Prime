@@ -256,3 +256,12 @@ document.addEventListener("fullscreenchange", (event) => {
   }
 });
 
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+function toggleMenu() {
+  const menu = document.querySelector('.mobile-menu');
+  menu.classList.toggle('active');
+}
